@@ -68,7 +68,7 @@ const CategorizationQuestion = () => {
 
     console.log("Data to save:", dataToSave);
     axios
-      .post("http://localhost:8080/question", { categories: dataToSave })
+      .post("https://assigment-flame.vercel.app//question", { categories: dataToSave })
       .then((response) => {
         alert("Data saved successfully!");
         console.log(response.data);

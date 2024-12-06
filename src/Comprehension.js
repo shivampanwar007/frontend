@@ -49,7 +49,7 @@ const Comprehension = () => {
     const { passage, questions, userAnswers } = state;
 
     try {
-      const response = await fetch("http://localhost:8080/questionss/save", {
+      const response = await fetch("https://assigment-flame.vercel.app//questionss/save", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -71,7 +71,7 @@ const Comprehension = () => {
 
   const fetchComprehensions = async () => {
     try {
-      const response = await fetch("http://localhost:8080/questionss");
+      const response = await fetch("https://assigment-flame.vercel.app//questionss");
       const data = await response.json();
       if (response.ok) {
         setState({ ...state, savedComprehensions: data });

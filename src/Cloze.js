@@ -103,7 +103,7 @@ const Cloze = () => {
     };
 
     try {
-      const response = await fetch("http://localhost:8080/questioning/savees", {
+      const response = await fetch("https://assigment-flame.vercel.app//questioning/savees", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
